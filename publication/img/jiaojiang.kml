@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+	<name>Jiaojiang.kml</name>
+	<Style id="default+icon=http://maps.google.com/mapfiles/kml/pal3/icon55.png">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pal3/icon55.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.1</scale>
+		</LabelStyle>
+	</Style>
+	<Style id="default+icon=http://maps.google.com/mapfiles/kml/pal3/icon63.png">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pal3/icon63.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="default+nicon=http://maps.google.com/mapfiles/kml/pal3/icon63.png+hicon=http://maps.google.com/mapfiles/kml/pal3/icon55.png0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#default+icon=http://maps.google.com/mapfiles/kml/pal3/icon63.png</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#default+icon=http://maps.google.com/mapfiles/kml/pal3/icon55.png</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Placemark>
+		<name>Jiaojiang</name>
+		<LookAt>
+			<longitude>121.4069699188824</longitude>
+			<latitude>28.66138694645963</latitude>
+			<altitude>0</altitude>
+			<range>29843.39187215027</range>
+			<tilt>0</tilt>
+			<heading>4.926809450086397</heading>
+		</LookAt>
+		<styleUrl>#default+nicon=http://maps.google.com/mapfiles/kml/pal3/icon63.png+hicon=http://maps.google.com/mapfiles/kml/pal3/icon55.png0</styleUrl>
+		<Point>
+			<coordinates>121.4793141575089,28.68597609269473,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>
