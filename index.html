@@ -5,7 +5,7 @@
     <title>虹宇实验室</title>
     <!-- 引入reset.css用来清除浏览器的默认样式 -->
     <link rel="stylesheet" type="text/css" href="css/reset-min.css"/>
-
+    <link rel="stylesheet" type="text/css" href="css/crowd.css">
     <link rel="stylesheet" type="text/css" href="css/page-index.css"/>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
@@ -14,128 +14,189 @@
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+          crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
             crossorigin="anonymous"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script type="text/javascript" src="js/zns_demo.js"></script>
+    <!--    <script type="text/javascript" src="js/zns_demo.js"></script>-->
     <script type="text/javascript" src="js/tools.js"></script>
     <script type="text/javascript" src="js/move.js"></script>
-    <script type="text/javascript" src="js/getByClass.js"></script>
+    <!--    <script type="text/javascript" src="js/getByClass.js"></script>-->
     <style>
         .banner > img {
             height: 60vh !important;
         }
 
+        .title {
+            text-align: center;
+            padding-top: 10px;
+            transition: .5s;
+            border-right: 3px rgba(192, 192, 192, 0.17) solid;
+
+        }
+
         .title > a {
             color: #575757;
-            margin-top: 30px;
+            margin-top: 0px;
             font-weight: 700;
-            font-size: 20px;
+            font-size: 2.1rem;
             text-decoration: none;
             text-align: center;
             border-bottom: 4px solid rgba(234, 234, 234, 0.17);
-            transition: 1s;
+            transition: .5s;
         }
-        .button:hover {
-            border-bottom: 4px solid #585858;
+
+        .title:hover {
             transition: 1s;
-            color: #3e3e3e;
+            background: rgba(255, 255, 255, 0.55);
         }
-        .fa {
-            color: #8c8c8c;
+
+        .button > i {
+            color: rgba(140, 140, 140, 0.68);
+            font-size: 1.5rem;
+        }
+
+        .right_btn {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            height: 70px;
+            transition: .8s;
+        }
+
+        .right_btn:hover {
+            box-shadow: rgba(234, 234, 234, 0.22) 1px 1px 5px 1px;
+            transition: .8s;
         }
     </style>
 </head>
 <body>
 
-
-<div class="container-fiuld" style="margin: 100px">
+<div class="container-fiuld" style="padding-top: 80px">
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-            <div class="row">
+            <div class="row" style="margin-top: -30px">
                 <div class="col-md-1"></div>
-                <div class="col-md-3">
+                <div class="col-md-1" style="margin-top: 30px">
                     <a href="#" target="_blank" title="The Nanosynthesis Consortium">
                         <img width=400 src="./img/nano.png" alt="logo" style="margin-top: -60px !important;"/>
                     </a>
                 </div>
-                <div class="col-md-1 title"><a class="button" href="index.html"><span class="fa fa-home"></span> Home</a></div>
-                <div class="col-md-1 title"><a class="button" href="chy.html"><span class="fa fa-users"></span> Member</a></div>
-                <div class="col-md-1 title"><a class="button" href="publication/publication.html" target="_blank"><span class="fa fa-book"></span> Publish</a></div>
-                <div class="col-md-1 title"><a class="button" href="album.html"><span class="fa fa-image"></span> Album</a></div>
-                <div class="col-md-1 title"><a class="button" href="http://idash.top/VR/gaoxiao/nangy/index.html" target="_blank"><span class="fa fa-institution"></span> Lab VR</a></div>
-                <div class="col-md-1 title"><a class="button" href="contact.html"><span class="fa fa-phone"></span> Contact</a></div>
-                <div class="col-md-2 title"></div>
+                <div class="col-md-2"></div>
+                <div class="col-sm-1 title" style="border-left: 3px rgba(192, 192, 192, 0.17) solid;"><a class="button" href="index.html">团队首页 <br> <i>Home</i></a></div>
+                <div class="col-md-1 title"><a class="button" href="chy.html">成员名单 <br> <i>Member</i></a></div>
+                <div class="col-md-1 title"><a class="button" href="publication/publication.html" target="_blank">学术成果 <br> <i>Publish</i></a></div>
+                <div class="col-md-1 title"><a class="button" href="album.html">相册 <br> <i>Album</i></a></div>
+                <div class="col-md-1 title"><a class="button" href="http://idash.top/VR/gaoxiao/nangy/index.html" target="_blank">VR展示 <br> <i>Lab VR</i></a></div>
+                <div class="col-md-1 title"><a class="button" href="contact.html">联系方式 <br> <i>Contact</i></a></div>
             </div>
         </div>
         <div class="col-md-1"></div>
     </div>
 </div>
 
-<div class="container">
+
+<div class="container-fluid" style="padding-top: 80px">
     <div class="row">
-        <div class="col-md-2" ></div>
-        <div class="col-md-8" >
-            <div class="bs-example" data-example-id="simple-carousel" style="border: 5px goldenrod solid; padding: 5px; border-radius: 9px; box-shadow: #3e3e3e 7px 6px 20px 1px">
-                <div class="bs-example" data-example-id="simple-carousel">
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item">
-                                <img src="img/2.jpg"/>
-                            </div>
-                            <div class="item active">
-                                <img src="img/3.jpg"/>
-                            </div>
-                            <div class="item">
-                                <img src="img/4.jpg"/>
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="row" style="background: #e29595; margin-bottom: 40px">
+
+
+
+
+
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-3"
+                     style="border-radius: 7px; padding-top: 10px; border-top: 5px goldenrod solid; border-bottom: 5px silver solid; box-shadow: #3e3e3e 1px 1px 5px 1px; height: 440px">
+                    <h4 class=""><span class="fa fa-volume-up text-primary"></span>&emsp;<b>实验室新闻</b>
+                        <svg t="1676366023796" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3531" width="60" height="30">
+                            <path d="M848 320a32 32 0 0 1 32 32v320a32 32 0 0 1-32 32H176a32 32 0 0 1-32-32V352a32 32 0 0 1 32-32h672zM498.816 490.112H294.528l-2.816 19.456h9.984l-7.936 55.552-9.728 0.512-3.584 24.32 64-4.352-1.28 8.704h38.912l11.776-84.736H496l2.816-19.456z m-8.704 26.88H400l-2.56 19.456-1.024 7.168 20.992 23.04-33.024 27.648h41.472l9.472-7.936 7.424 7.936h41.472l-25.344-27.648 27.648-23.04 3.584-26.624z m251.648-107.008l-91.904 14.592-24.064 169.728h36.352l14.336-101.632h12.032l-14.336 101.632h36.608l14.336-101.632h9.728l3.584-24.32h-58.368l3.584-25.344 54.528-8.704 3.584-24.32zM572.544 453.76h-34.048l3.072 14.592h-17.152l-3.584 24.32h36.608l-1.024 7.424h-31.744l-3.328 24.32h31.744l-7.936 55.296-14.336 14.592h33.536c4.96 0 9.344-1.584 13.184-4.736 3.2-2.624 5.36-5.888 6.496-9.76l0.544-2.4 7.424-52.992h31.488l3.328-24.32h-31.488l1.024-7.424h36.352l3.584-24.32h-17.152l7.168-14.592h-34.048l-7.168 14.592h-9.472l-3.072-14.592z m47.36 77.824h-24.32l0.512 48.64h24.32l-0.512-48.64z m-72.704 0h-24.32l-14.336 48.64h24.32l14.336-48.64z m-198.4 21.76l-1.024 7.936-14.592 1.024 1.28-8.96h14.336z m104.704-16.896l-12.544 10.496-9.472-10.496h22.016z m-101.632-4.864l-1.024 7.168h-14.336l1.024-7.168h14.336z m3.072-22.016l-1.024 7.424h-14.336l1.024-7.424h14.336z m139.776-94.72H310.144l8.192 9.472-8.192 58.624h175.104l9.472-68.096z m-54.272 41.216l-1.024 7.424H361.6l1.024-7.424h77.824z m167.68-46.08h-46.336l6.4 7.424-1.024 7.168h-31.744l-3.584 24.32h102.144l3.584-24.32H606.08l2.048-14.592zM443.52 434.048l-1.024 7.168h-77.824l1.024-7.168h77.824z"
+                                  fill="#FF5400" p-id="3532"></path>
+                        </svg>
+                    </h4>
+                    <hr>
+                    暂无内容。
+                </div>
+                <div class="col-md-7">
+                    <div class="bs-example" data-example-id="simple-carousel" style="border: 5px silver solid; padding: 5px; border-radius: 9px; box-shadow: #3e3e3e 1px 1px 5px 1px">
+                        <div class="bs-example" data-example-id="simple-carousel">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item">
+                                        <img src="img/2.jpg"/>
+                                    </div>
+                                    <div class="item active">
+                                        <img src="img/3.jpg"/>
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/4.jpg"/>
+                                    </div>
+                                </div>
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" style="background: none">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" style="background: none">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
                         </div>
-                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" style="background: none">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" style="background: none">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
                     </div>
+                </div>
+                <div class="col-md-2" style="border-right: rgba(140,140,140,0.14) 5px solid; padding-right: 25px">
+                    <button class="btn btn-lg btn-danger right_btn" style="width: 100%; font-weight: 800; box-shadow: lightpink 1px 1px 5px 1px;">最新成果</button>
+                    <button class="btn btn-lg btn-warning right_btn" style="width: 100%; font-weight: 800; box-shadow:orange 1px 1px 5px 1px;">研究方向</button>
+                    <button class="btn btn-lg btn-info right_btn" style="width: 100%; font-weight: 800; box-shadow: skyblue 1px 1px 5px 1px;">合作创新</button>
+                    <button class="btn btn-lg btn-default right_btn" disabled style="width: 100%; font-weight: 800; box-shadow: silver 1px 1px 5px 1px;">虚拟实验室</button>
                 </div>
             </div>
         </div>
-        <div class="col-md-2" ></div>
+        <div class="col-md-3"></div>
     </div>
 </div>
 
 <!--content开始-->
-<div class="content w clearfix">
-    <h1> The Nanosynthesis Consortium combines the strength of PIs across multiple
+<div class="content clearfix">
+    <h1 style="font-size: 2.0rem"> The Nanosynthesis Consortium combines the strength of PIs across multiple
         unviersities.<br> <br>
-        We work to develop methodologies for the synthesis of complex
-        nanostructures for novel applications.</h1>
+        We work to develop methodologies for <span style="color: goldenrod">the synthesis of complex nanostructures</span> for novel applications.</h1>
 </div>
 
 
 <div class="footer" style="position: absolute; bottom: 0; width: 100%; text-align: center">
     <div class="w">
         <br>
-        <p><a href="#">首页</a> | <a href="contact.html">联系方式 </a>| <a href="http://idash.top/VR/gaoxiao/nangy/index.html" target="_blank">实验室VR展示</a></p>
+        <p><a style="font-size: 1.5rem !important;" href="#">首页</a> |
+            <a style="font-size: 1.5rem !important;" href="contact.html">联系方式 </a>|
+            <a style="font-size: 1.5rem !important;" href="http://idash.top/VR/gaoxiao/nangy/index.html" target="_blank">实验室VR展示</a></p>
     </div>
 </div>
 
 
 <!-- 处理ie6的png问题 -->
-<!--[if IE 6]>
-<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
-<script type="text/javascript">DD_belatedPNG.fix("div,img,a,h1");</script>
-<![endif]-->
+
+<!--<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>-->
+<!--<script type="text/javascript">DD_belatedPNG.fix("div,img,a,h1");</script>-->
+
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="https://s1.pstatp.com/cdn/expire-1-M/jquery/1.10.2/jquery.min.js"></script>
+
 </body>
 </html>
