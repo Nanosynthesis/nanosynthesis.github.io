@@ -161,7 +161,7 @@ body{
 
 /*设置底部*/
 .footer{
-	height: 100px;
+	height: 80px;
 	background: #333;
 	/*设置上边框*/
 	border-top: 10px solid #4c4c4c;
