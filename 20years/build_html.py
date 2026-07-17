@@ -74,7 +74,7 @@ HEAD = """<!DOCTYPE html>
     }}
     .retro-body {{
         {body_font}
-        font-size: 1.8rem;
+        font-size: 2.4rem;
         line-height: 2;
         color: #222;
         {text_align}
@@ -113,7 +113,7 @@ HEAD = """<!DOCTYPE html>
     }}
     @media (max-width: 768px) {{
         .retro-body {{
-            font-size: 1.6rem;
+            font-size: 2rem;
         }}
         .retro-body .img_box {{
             width: 100%;
