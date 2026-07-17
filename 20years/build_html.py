@@ -87,8 +87,7 @@ HEAD = """<!DOCTYPE html>
         text-indent: 0;
     }}
     .retro-body .img_box {{
-        width: 680px;
-        max-width: 100%;
+        width: 100%;
         margin: 24px auto 30px auto;
         text-align: center;
     }}
